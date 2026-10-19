@@ -1,0 +1,12 @@
+{
+  "events_across_scenarios": 86400,
+  "stable_alerts": 0,
+  "shifted_runs_with_all_targets": 3,
+  "capacity_evictions": 0,
+  "runtime": {
+    "python": "3.12.14",
+    "system": "Darwin",
+    "architecture": "arm64"
+  },
+  "csv_sample_limit": 25
+}

@@ -1,0 +1,10 @@
+run_id,received,model_name,metric,baseline_mean,recent_mean,score,score_kind,baseline_n,recent_n,consecutive_checks
+shifted-42,165,leak_detector,confidence_score,0.882087610619469,0.6009580919931857,-4.296352561954453,baseline_standardized_effect,791,587,2
+shifted-42,210,demand_forecaster,response_time_ms,79.5888989769821,158.04117435897436,8.214681930087073,baseline_standardized_effect,782,585,2
+shifted-42,225,leak_detector,confidence_score,0.882087610619469,0.532213550600343,-5.346938740085912,baseline_standardized_effect,791,583,6
+shifted-42,270,demand_forecaster,response_time_ms,79.5888989769821,278.7879595278246,20.857991883979594,baseline_standardized_effect,782,593,6
+shifted-42,285,leak_detector,confidence_score,0.882087610619469,0.5290188356164384,-5.395761866070271,baseline_standardized_effect,791,584,10
+shifted-42,300,leak_detector,leak_rate,0.08596713021491782,0.4332191780821918,15.045894364142184,pooled_proportion_score,791,584,2
+shifted-42,330,demand_forecaster,response_time_ms,79.5888989769821,279.5107770154374,20.93367758876422,baseline_standardized_effect,782,583,10
+shifted-42,345,leak_detector,confidence_score,0.882087610619469,0.5284395509499137,-5.404614764809918,baseline_standardized_effect,791,579,14
+shifted-42,360,leak_detector,leak_rate,0.08596713021491782,0.6110154905335629,20.80891232050143,pooled_proportion_score,791,581,6

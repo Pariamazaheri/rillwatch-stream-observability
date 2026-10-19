@@ -1,0 +1,29 @@
+{
+  "required_fields": {
+    "reading_id": "positive integer; booleans rejected",
+    "station_id": "exactly ST-01 through ST-10",
+    "model_name": [
+      "leak_detector",
+      "pressure_drop_predictor",
+      "demand_forecaster"
+    ],
+    "predicted_label": {
+      "leak_detector": [
+        "leak",
+        "normal"
+      ],
+      "pressure_drop_predictor": [
+        "drop",
+        "stable"
+      ],
+      "demand_forecaster": "integer 1..5000"
+    },
+    "confidence_score": "finite number in [0,1]; booleans rejected",
+    "response_time_ms": "finite positive number; booleans rejected",
+    "timestamp": "ISO date+time string or positive representable epoch"
+  },
+  "unknown_fields": "allowed and preserved",
+  "frame_limit_bytes": 65536,
+  "invalid_utf8": "quarantined",
+  "duplicate_json_keys": "rejected"
+}

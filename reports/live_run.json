@@ -1,0 +1,13 @@
+{
+  "connections": 1,
+  "disconnects": 1,
+  "idle_timeouts": 0,
+  "duration_seconds": 360.12790425000003,
+  "counts": {
+    "bad": 306,
+    "clean": 13416
+  },
+  "capacity_evictions": 0,
+  "alert_count": 9,
+  "report_count": 19
+}

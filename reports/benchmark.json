@@ -1,0 +1,458 @@
+[
+  {
+    "scenario": "stable",
+    "seed": 42,
+    "simulated_seconds": 360,
+    "events": 14400,
+    "counts": {
+      "bad": 329,
+      "clean": 14071
+    },
+    "alerts": [],
+    "first_alert_seconds": {},
+    "wall_seconds": 0.6460985419998906,
+    "local_events_per_second": 22287.621877968017,
+    "capacity_evictions": 0
+  },
+  {
+    "scenario": "stable",
+    "seed": 7,
+    "simulated_seconds": 360,
+    "events": 14400,
+    "counts": {
+      "bad": 369,
+      "clean": 14031
+    },
+    "alerts": [],
+    "first_alert_seconds": {},
+    "wall_seconds": 0.6586577500002022,
+    "local_events_per_second": 21862.64414256961,
+    "capacity_evictions": 0
+  },
+  {
+    "scenario": "stable",
+    "seed": 19,
+    "simulated_seconds": 360,
+    "events": 14400,
+    "counts": {
+      "bad": 376,
+      "clean": 14024
+    },
+    "alerts": [],
+    "first_alert_seconds": {},
+    "wall_seconds": 0.6442682910001167,
+    "local_events_per_second": 22350.937026012027,
+    "capacity_evictions": 0
+  },
+  {
+    "scenario": "shifted",
+    "seed": 42,
+    "simulated_seconds": 360,
+    "events": 14400,
+    "counts": {
+      "bad": 329,
+      "clean": 14071
+    },
+    "alerts": [
+      {
+        "run_id": "shifted-42",
+        "received": 165,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.882087610619469,
+        "recent_mean": 0.6009580919931857,
+        "score": -4.296352561954453,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 791,
+        "recent_n": 587,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 210,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 79.5888989769821,
+        "recent_mean": 158.04117435897436,
+        "score": 8.214681930087073,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 782,
+        "recent_n": 585,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 225,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.882087610619469,
+        "recent_mean": 0.532213550600343,
+        "score": -5.346938740085912,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 791,
+        "recent_n": 583,
+        "consecutive_checks": 6
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 270,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 79.5888989769821,
+        "recent_mean": 278.7879595278246,
+        "score": 20.857991883979594,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 782,
+        "recent_n": 593,
+        "consecutive_checks": 6
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 285,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.882087610619469,
+        "recent_mean": 0.5290188356164384,
+        "score": -5.395761866070271,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 791,
+        "recent_n": 584,
+        "consecutive_checks": 10
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 300,
+        "model_name": "leak_detector",
+        "metric": "leak_rate",
+        "baseline_mean": 0.08596713021491782,
+        "recent_mean": 0.4332191780821918,
+        "score": 15.045894364142184,
+        "score_kind": "pooled_proportion_score",
+        "baseline_n": 791,
+        "recent_n": 584,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 330,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 79.5888989769821,
+        "recent_mean": 279.5107770154374,
+        "score": 20.93367758876422,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 782,
+        "recent_n": 583,
+        "consecutive_checks": 10
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 345,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.882087610619469,
+        "recent_mean": 0.5284395509499137,
+        "score": -5.404614764809918,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 791,
+        "recent_n": 579,
+        "consecutive_checks": 14
+      },
+      {
+        "run_id": "shifted-42",
+        "received": 360,
+        "model_name": "leak_detector",
+        "metric": "leak_rate",
+        "baseline_mean": 0.08596713021491782,
+        "recent_mean": 0.6110154905335629,
+        "score": 20.80891232050143,
+        "score_kind": "pooled_proportion_score",
+        "baseline_n": 791,
+        "recent_n": 581,
+        "consecutive_checks": 6
+      }
+    ],
+    "first_alert_seconds": {
+      "leak_detector:confidence_score": 165,
+      "demand_forecaster:response_time_ms": 210,
+      "leak_detector:leak_rate": 300
+    },
+    "wall_seconds": 0.6563659160001407,
+    "local_events_per_second": 21938.981974799728,
+    "capacity_evictions": 0
+  },
+  {
+    "scenario": "shifted",
+    "seed": 7,
+    "simulated_seconds": 360,
+    "events": 14400,
+    "counts": {
+      "bad": 369,
+      "clean": 14031
+    },
+    "alerts": [
+      {
+        "run_id": "shifted-7",
+        "received": 165,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8789066919191919,
+        "recent_mean": 0.60472487135506,
+        "score": -4.009737163407083,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 792,
+        "recent_n": 583,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 210,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 80.30616326530613,
+        "recent_mean": 157.78016027874565,
+        "score": 7.823073076869382,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 784,
+        "recent_n": 574,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 225,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8789066919191919,
+        "recent_mean": 0.5318712585034013,
+        "score": -5.0751755587708605,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 792,
+        "recent_n": 588,
+        "consecutive_checks": 6
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 270,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 80.30616326530613,
+        "recent_mean": 279.194843803056,
+        "score": 20.083134238434077,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 784,
+        "recent_n": 589,
+        "consecutive_checks": 6
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 285,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8789066919191919,
+        "recent_mean": 0.5318218803418804,
+        "score": -5.075897683413931,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 792,
+        "recent_n": 585,
+        "consecutive_checks": 10
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 285,
+        "model_name": "leak_detector",
+        "metric": "leak_rate",
+        "baseline_mean": 0.07196969696969698,
+        "recent_mean": 0.2923076923076923,
+        "score": 10.873502282434279,
+        "score_kind": "pooled_proportion_score",
+        "baseline_n": 792,
+        "recent_n": 585,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 330,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 80.30616326530613,
+        "recent_mean": 279.7846140651801,
+        "score": 20.142687327690087,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 784,
+        "recent_n": 583,
+        "consecutive_checks": 10
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 345,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8789066919191919,
+        "recent_mean": 0.5288829931972789,
+        "score": -5.118877064681885,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 792,
+        "recent_n": 588,
+        "consecutive_checks": 14
+      },
+      {
+        "run_id": "shifted-7",
+        "received": 345,
+        "model_name": "leak_detector",
+        "metric": "leak_rate",
+        "baseline_mean": 0.07196969696969698,
+        "recent_mean": 0.5459183673469388,
+        "score": 19.522810805574284,
+        "score_kind": "pooled_proportion_score",
+        "baseline_n": 792,
+        "recent_n": 588,
+        "consecutive_checks": 6
+      }
+    ],
+    "first_alert_seconds": {
+      "leak_detector:confidence_score": 165,
+      "demand_forecaster:response_time_ms": 210,
+      "leak_detector:leak_rate": 285
+    },
+    "wall_seconds": 0.6522630409999692,
+    "local_events_per_second": 22076.982896231093,
+    "capacity_evictions": 0
+  },
+  {
+    "scenario": "shifted",
+    "seed": 19,
+    "simulated_seconds": 360,
+    "events": 14400,
+    "counts": {
+      "bad": 376,
+      "clean": 14024
+    },
+    "alerts": [
+      {
+        "run_id": "shifted-19",
+        "received": 165,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8771371318822023,
+        "recent_mean": 0.599851452991453,
+        "score": -4.157950241198912,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 781,
+        "recent_n": 585,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 210,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 79.82402307692308,
+        "recent_mean": 158.7526785109983,
+        "score": 7.791714279964995,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 780,
+        "recent_n": 591,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 225,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8771371318822023,
+        "recent_mean": 0.5244632478632478,
+        "score": -5.288410375131316,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 781,
+        "recent_n": 585,
+        "consecutive_checks": 6
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 270,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 79.82402307692308,
+        "recent_mean": 279.30345890410956,
+        "score": 19.692300092356955,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 780,
+        "recent_n": 584,
+        "consecutive_checks": 6
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 285,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8771371318822023,
+        "recent_mean": 0.5322478632478632,
+        "score": -5.171678621996473,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 781,
+        "recent_n": 585,
+        "consecutive_checks": 10
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 285,
+        "model_name": "leak_detector",
+        "metric": "leak_rate",
+        "baseline_mean": 0.07170294494238157,
+        "recent_mean": 0.305982905982906,
+        "score": 11.352688174082743,
+        "score_kind": "pooled_proportion_score",
+        "baseline_n": 781,
+        "recent_n": 585,
+        "consecutive_checks": 2
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 330,
+        "model_name": "demand_forecaster",
+        "metric": "response_time_ms",
+        "baseline_mean": 79.82402307692308,
+        "recent_mean": 280.07160034013606,
+        "score": 19.76812982191721,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 780,
+        "recent_n": 588,
+        "consecutive_checks": 10
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 345,
+        "model_name": "leak_detector",
+        "metric": "confidence_score",
+        "baseline_mean": 0.8771371318822023,
+        "recent_mean": 0.5330631487889274,
+        "score": -5.159453263926505,
+        "score_kind": "baseline_standardized_effect",
+        "baseline_n": 781,
+        "recent_n": 578,
+        "consecutive_checks": 14
+      },
+      {
+        "run_id": "shifted-19",
+        "received": 345,
+        "model_name": "leak_detector",
+        "metric": "leak_rate",
+        "baseline_mean": 0.07170294494238157,
+        "recent_mean": 0.5986159169550173,
+        "score": 21.041130001480635,
+        "score_kind": "pooled_proportion_score",
+        "baseline_n": 781,
+        "recent_n": 578,
+        "consecutive_checks": 6
+      }
+    ],
+    "first_alert_seconds": {
+      "leak_detector:confidence_score": 165,
+      "demand_forecaster:response_time_ms": 210,
+      "leak_detector:leak_rate": 285
+    },
+    "wall_seconds": 0.659741583000141,
+    "local_events_per_second": 21826.727875051834,
+    "capacity_evictions": 0
+  }
+]
